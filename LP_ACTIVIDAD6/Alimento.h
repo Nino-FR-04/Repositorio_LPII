@@ -22,7 +22,7 @@ class Alimento : public Producto<Alimento> {
         string getF_venc() { return this->f_venc; }
 
         // Método para mostrar detalles, sobrescribe el método virtual de Producto
-        void mostrarDetalles() override {
+        void mostrarDetalles() {
             Producto::mostrarDetalles(); // Llama al método de la clase base
             cout << "Fecha de vencimiento: " << this->f_venc << endl;
         }
