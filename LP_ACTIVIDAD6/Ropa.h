@@ -25,7 +25,7 @@ class Ropa : public Producto<Ropa> {
         string getColor() { return this->color; }
 
         // Método para mostrar detalles, sobrescribe el método virtual de Producto
-        void mostrarDetalles() override {
+        void mostrarDetalles() {
             Producto::mostrarDetalles(); // Llama al método de la clase base
             cout << "Talla: " << this->talla << endl;
             cout << "Color: " << this->color << endl;
