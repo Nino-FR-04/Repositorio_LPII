@@ -68,7 +68,7 @@ public:
         getline(ss, i, ';');
         getline(ss, g, ';');
         ss >> an;
-        ss.ignore(); // Ignorar el delimitador ';'
+        ss.ignore(); 
         ss >> disp;
 
         return Libro(t, a, i, g, an, disp);
